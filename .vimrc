@@ -5,7 +5,7 @@ scriptencoding utf-8
 " An example for a Japanese version vimrc file.
 " 日本語版のデフォルト設定ファイル(vimrc) - Vim 7.4
 "
-" Last Change: 04-Apr-2018.
+" Last Change: 06-Apr-2018.
 " Maintainer:  MURAOKA Taro <koron.kaoriya@gmail.com>
 "
 " 解説:
@@ -299,6 +299,7 @@ nnoremap っy yy
 
 " 日本語入力で”っj”と入力してもEnterキーで確定させればインサートモードを抜ける
 inoremap <silent> っj <ESC>
+inoremap <silent> ｊｊ <ESC>
 
 
 
