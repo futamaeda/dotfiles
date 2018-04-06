@@ -295,7 +295,9 @@ nnoremap い i
 nnoremap う u
 nnoremap お o
 nnoremap っd dd
+nnoremap ｄｄ dd
 nnoremap っy yy
+nnoremap ｙｙ yy
 
 " 日本語入力で”っj”と入力してもEnterキーで確定させればインサートモードを抜ける
 inoremap <silent> っj <ESC>
