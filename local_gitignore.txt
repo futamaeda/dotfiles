@@ -32,6 +32,9 @@ ExportedObj/
 sysinfo.txt
 
 
+# Vim
+*.swp
+
 # (Temp)
 */Temp/UnityLockfile
 */Assets/Scene/Cogni2.meta

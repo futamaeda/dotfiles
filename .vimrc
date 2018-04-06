@@ -5,7 +5,7 @@ scriptencoding utf-8
 " An example for a Japanese version vimrc file.
 " 日本語版のデフォルト設定ファイル(vimrc) - Vim 7.4
 "
-" Last Change: 06-Feb-2018.
+" Last Change: 04-Apr-2018.
 " Maintainer:  MURAOKA Taro <koron.kaoriya@gmail.com>
 "
 " 解説:
@@ -184,6 +184,11 @@ set title
 "
 " バックアップファイルを作成しない (次行の先頭の " を削除すれば有効になる)
 "set nobackup
+
+" バックアップはCの見えるところに
+set backupdir=C:/VimTemp
+set undodir=C:/VimTemp
+set directory=C:/VimTemp
 
 
 "---------------------------------------------------------------------------
