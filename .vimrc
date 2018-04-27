@@ -5,7 +5,7 @@ scriptencoding utf-8
 " An example for a Japanese version vimrc file.
 " 日本語版のデフォルト設定ファイル(vimrc) - Vim 7.4
 "
-" Last Change: 06-Apr-2018.
+" Last Change: 27-Apr-2018.
 " Maintainer:  MURAOKA Taro <koron.kaoriya@gmail.com>
 "
 " 解説:
@@ -288,6 +288,12 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
+
+"Vimでは<C-S->同時押し不可らしい。
+"↓(さらにA-hもデフォルトのヘルプとかぶっちゃうので)
+inoremap <A-j> <Bs>
+inoremap <A-k> <Del>
+
 
 " 日本語入力がオンのままでも使えるコマンド(Enterキーは必要)
 nnoremap あ a
