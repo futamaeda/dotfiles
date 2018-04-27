@@ -1,0 +1,96 @@
+{
+    //// 基本系
+    "window.zoomLevel": 1,
+
+    "editor.fontSize": 16,
+
+    // 色
+    // "workbench.colorTheme": "Default Dark+",
+
+    // フォント
+    //"editor.fontFamily": "Consolas, 'Courier New', monospace",
+    //"editor.fontWeight": "normal",
+    //"editor.formatOnPaste": false,
+
+    // エディタ見栄え系
+    "editor.quickSuggestionsDelay": 5,
+    "editor.renderLineHighlight": "all",
+
+    // インデントガイド(インデントに沿って縦線を表示)
+    "editor.renderIndentGuides": true,
+
+    // フォーマット時
+    //"editor.formatOnSave": false,
+
+    // diff確認時
+    // 差分を横に並べて表示ではなく行内に表示する
+    "diffEditor.renderSideBySide": false,
+
+    // Quick Openで開いたファイルはプレビューにしない方が使いやすい
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+
+    // Altキーをコマンド用に開放
+    "window.enableMenuBarMnemonics": false,
+
+    // タイトル部分にファイルへの完全パスを。
+    "window.title": "${dirty}${activeEditorLong}${separator}${rootName}${separator}${appName}",
+
+    // Zenモードでタブの表示
+    "zenMode.hideTabs": false,
+
+    // ファイルエンコーディング
+    "files.encoding": "utf8",
+    
+    // サーチ時
+    "search.smartCase": true,
+
+    ////デバッグ
+    // 任意のファイルにブレークポイントを設定できるようにする
+    "debug.allowBreakpointsEverywhere": true,
+
+    // TODO: これをいじるとたぶんキーバインド効かない奴を効かせられる
+    // "terminal.integrated.commandsToSkipShell": [
+
+    //// Vim用
+
+    // Vimでコントロールする、しないキー
+    "vim.handleKeys": {
+        "<C-k>": true,
+        "<C-h>": true,
+        "<C-j>": true,
+        "<C-l>": true,
+    },
+
+    "vim.insertModeKeyBindingsNonRecursive": [
+        
+    ],
+
+    "vim.insertModeKeyBindings": [
+       {
+           "before": ["j", "j"],
+           "after": ["<ESC>"]
+       },
+    ],
+
+    // 直書きでは動かないのでleaderとして指定
+    "vim.leader": "<space>",
+
+    "vim.otherModesKeyBindings": [
+       {
+           "before": ["<leader>", "m"],
+           "after": ["%"]
+       },
+       {
+           "before": ["<leader>", "h"],
+           "after": ["^"]
+       },
+       {
+           "before": ["<leader>", "l"],
+           "after": ["$"]
+       },
+        
+    ]
+
+
+
+}
