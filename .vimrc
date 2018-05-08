@@ -5,7 +5,7 @@ scriptencoding utf-8
 " An example for a Japanese version vimrc file.
 " 日本語版のデフォルト設定ファイル(vimrc) - Vim 7.4
 "
-" Last Change: 27-Apr-2018.
+" Last Change: 07-May-2018.
 " Maintainer:  MURAOKA Taro <koron.kaoriya@gmail.com>
 "
 " 解説:
@@ -276,8 +276,8 @@ set nrformats=
 " 挿入モードはjjでもエスケープ、いつでも<C-j>でエスケープ  map <C-j> <esc> map! <C-j> <esc>じゃないけどOK?  なぜかコマンドラインモードでは<CR>が返ってくるのでcnoremapを追加すると…inoremap <C-j> <esc> cmap <C-j> <esc> としてもダメだったので放置
 " ただしinoremapでは移動(下に)
 inoremap <silent> jj <ESC>
-noremap <C-j> <esc>
-noremap! <C-j> <esc>
+"noremap <C-j> <esc>
+"noremap! <C-j> <esc>
 
 
 " このへんコピペhttps://qiita.com/ssh0/items/9e7f0d8b8f033183dd0b

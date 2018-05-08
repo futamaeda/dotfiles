@@ -51,14 +51,24 @@
     // TODO: これをいじるとたぶんキーバインド効かない奴を効かせられる
     // "terminal.integrated.commandsToSkipShell": [
 
+
     //// Vim用
 
+    // TODO: サーチしたら色つけっぱにしたい
+    "vim.searchHighlightColor": "rgba(255, 215, 236, 0.2)",
+
+    "vim.visualstar": true,
+
+    //TODO: 外部コピーしたい。 おそらくkeybindings.jsonで
+    //"vim.overrideCopy": false,
+
     // Vimでコントロールする、しないキー
+    // TODO: そのうちできるようにしたいけどこのままでも悪くない
     "vim.handleKeys": {
-        "<C-k>": true,
-        "<C-h>": true,
-        "<C-j>": true,
-        "<C-l>": true,
+        "<C-k>": false,
+        "<C-h>": false,
+        "<C-j>": false,
+        "<C-l>": false,
     },
 
     "vim.insertModeKeyBindingsNonRecursive": [
@@ -66,10 +76,28 @@
     ],
 
     "vim.insertModeKeyBindings": [
+       // 最重要
        {
            "before": ["j", "j"],
            "after": ["<ESC>"]
        },
+       // TODO: このへんはvimじゃなくVSCode側でやらないと？今は消してる
+       //{
+       //    "before": ["<C-h>"],
+       //    "after": ["left"]
+       //},
+       //{
+       //    "before": ["<C-l>"],
+       //    "after": ["right"]
+       //},
+       //{
+       //    "before": ["<C-j>"],
+       //    "after": ["down"]
+       //},
+       //{
+       //    "before": ["<C-k>"],
+       //    "after": ["up"]
+       //},
     ],
 
     // 直書きでは動かないのでleaderとして指定
@@ -89,6 +117,15 @@
            "after": ["$"]
        },
         
+       // コロンセミコロン入れ替え
+       {
+           "before":[";"],
+           "after":[":"]
+       },
+       {
+           "before":[":"],
+           "after":[";"]
+       },
     ]
 
 

@@ -1,0 +1,14 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+    // http://tc.hatenablog.com/entry/2016/11/29/225724
+    { "key": "ctrl+c",   "command": "editor.action.clipboardCopyAction",
+        "when": "editorTextFocus && !inDebugRepl && vim.mode != 'Insert'" },
+    { "key": "ctrl+n",  "command": "workbench.action.files.newUntitledFile",
+        "when": "editorTextFocus && !inDebugRepl && vim.mode != 'Insert'" },
+    { "key": "ctrl+v",  "command": "editor.action.clipboardPasteAction",
+        "when": "editorTextFocus && !inDebugRepl && vim.mode == 'Insert'" },
+    { "key": "ctrl+w",  "command": "workbench.action.closeActiveEditor",
+        "when": "editorTextFocus && !inDebugRepl && vim.mode != 'Insert'" },
+    { "key": "ctrl+x",  "command": "editor.action.clipboardCutAction",
+        "when": "editorTextFocus && !inDebugRepl" }
+]
