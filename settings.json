@@ -59,8 +59,9 @@
 
     "vim.visualstar": true,
 
-    //TODO: 外部コピーしたい。 おそらくkeybindings.jsonで
-    //"vim.overrideCopy": false,
+    // 外部コピーしたい。 keybindings.jsonでやった
+    // いらなかったら消しておく
+    //"vim.useSystemClipboard": true,
 
     // Vimでコントロールする、しないキー
     // TODO: そのうちできるようにしたいけどこのままでも悪くない
