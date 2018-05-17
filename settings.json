@@ -16,8 +16,17 @@
     "editor.quickSuggestionsDelay": 5,
     "editor.renderLineHighlight": "all",
 
+    // タブとスペースの可視化
+    "editor.renderWhitespace": "boundary",
+
+    // "references"のとこ消す
+    "editor.codeLens": false,
+
     // インデントガイド(インデントに沿って縦線を表示)
     "editor.renderIndentGuides": true,
+
+    // インデント設定を固定しておく(Shader書いてるとTabになっちゃうから)
+    "editor.detectIndentation": false,
 
     // フォーマット時
     //"editor.formatOnSave": false,
