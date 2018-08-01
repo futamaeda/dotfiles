@@ -1,4 +1,8 @@
 {
+    //// 拡張機能は別管理
+    // Bracket Pair Colorizer
+
+
     //// 基本系
     "window.zoomLevel": 1,
 
@@ -35,7 +39,7 @@
     // 差分を横に並べて表示ではなく行内に表示する
     "diffEditor.renderSideBySide": false,
 
-    // Quick Openで開いたファイルはプレビューにしない方が使いやすい
+    // Quick Openで開いたファイルはプレビューにしない方が使いやすい?
     "workbench.editor.enablePreviewFromQuickOpen": false,
 
     // Altキーをコマンド用に開放
@@ -81,9 +85,9 @@
         "<C-l>": false,
     },
 
-    "vim.insertModeKeyBindingsNonRecursive": [
-        
-    ],
+    //"vim.insertModeKeyBindingsNonRecursive": [
+    //    
+    //],
 
     "vim.insertModeKeyBindings": [
        // 最重要
@@ -113,7 +117,7 @@
     // 直書きでは動かないのでleaderとして指定
     "vim.leader": "<space>",
 
-    "vim.otherModesKeyBindings": [
+    "vim.normalModeKeyBindings": [
        {
            "before": ["<leader>", "m"],
            "after": ["%"]
@@ -136,7 +140,33 @@
            "before":[":"],
            "after":[";"]
        },
-    ]
+    ],
+
+    // なぜコピペせねばならんのだ
+    "vim.visualModeKeyBindingsNonRecursive": [
+       {
+           "before": ["<leader>", "m"],
+           "after": ["%"]
+       },
+       {
+           "before": ["<leader>", "h"],
+           "after": ["^"]
+       },
+       {
+           "before": ["<leader>", "l"],
+           "after": ["$"]
+       },
+        
+       // コロンセミコロン入れ替え
+       {
+           "before":[";"],
+           "after":[":"]
+       },
+       {
+           "before":[":"],
+           "after":[";"]
+       },
+    ],
 
 
 
