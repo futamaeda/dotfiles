@@ -1,5 +1,6 @@
 ﻿mklink  "C:\Users\(ユーザー)\.vimrc" "C:\Users\(ユーザー)\Documents\dotfiles\.vimrc"
 mklink  "C:\Users\(ユーザー)\.vsvimrc" "C:\Users\(ユーザー)\Documents\dotfiles\.vsvimrc"
 mklink  "C:\Users\(ユーザー)\_gvimrc" "C:\Users\(ユーザー)\Documents\dotfiles\_gvimrc"
+mklink  "C:\Users\(ユーザー)\.ideavimrc" "C:\Users\(ユーザー)\Documents\dotfiles\.ideavimrc"
 mklink  "C:\Users\(ユーザー)\AppData\Roaming\Code\User\settings.json" "C:\Users\(ユーザー)\Documents\dotfiles\settings.json"
 mklink  "C:\Users\(ユーザー)\AppData\Roaming\Code\User\keybindings.json" "C:\Users\(ユーザー)\Documents\dotfiles\keybingings.json"
